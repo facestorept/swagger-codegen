@@ -31,24 +31,16 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/{{#composerVendorName}}{{.}}{{/composerVendorName}}{{^composerVendorName}}{{gitUserId}}{{/composerVendorName}}/{{#composerProjectName}}{{.}}{{/composerProjectName}}{{^composerProjectName}}{{gitRepoId}}{{/composerProjectName}}.git"
+      "url": "https://github.com/facestorept/api-sdk-php.git"
     }
   ],
   "require": {
-    "{{#composerVendorName}}{{.}}{{/composerVendorName}}{{^composerVendorName}}{{gitUserId}}{{/composerVendorName}}/{{#composerProjectName}}{{.}}{{/composerProjectName}}{{^composerProjectName}}{{gitRepoId}}{{/composerProjectName}}": "*@dev"
+    "facestorept/api-sdk-php": "*@dev"
   }
 }
 ```
 
 Then run `composer install`
-
-### Manual Installation
-
-Download the files and include `autoload.php`:
-
-```php
-    require_once('/path/to/{{packagePath}}/vendor/autoload.php');
-```
 
 ## Tests
 

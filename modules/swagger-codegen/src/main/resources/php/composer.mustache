@@ -1,21 +1,29 @@
 {
-    "name": "{{#composerVendorName}}{{.}}{{/composerVendorName}}{{^composerVendorName}}{{gitUserId}}{{/composerVendorName}}/{{#composerProjectName}}{{.}}{{/composerProjectName}}{{^composerProjectName}}{{gitRepoId}}{{/composerProjectName}}",
+    "name": "facestorept/api-sdk-php",
     {{#artifactVersion}}
     "version": "{{artifactVersion}}",
     {{/artifactVersion}}
-    "description": "{{description}}",
+    "description": "The PHP SDK for Facestore API project",
     "keywords": [
         "swagger",
         "php",
         "sdk",
         "api"
     ],
-    "homepage": "http://swagger.io",
-    "license": "proprietary",
+    "homepage": "https://developers.facestore.pt",
+    "license": "MIT",
     "authors": [
         {
             "name": "Swagger and contributors",
             "homepage": "https://github.com/swagger-api/swagger-codegen"
+        },
+        {
+            "name": "Luciano Jr",
+            "homepage": "https://github.com/luciano-jr"
+        },
+        {
+            "name": "Douglas Saldanha",
+            "homepage": "https://github.com/douglasmamuty"
         }
     ],
     "require": {
